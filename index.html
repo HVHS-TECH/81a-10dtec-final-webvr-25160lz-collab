@@ -12,8 +12,16 @@
       <a-sky color="lightblue"></a-sky>
       
        <!-- Put this inside the <a-scene> -->
-        <a-entity ply-model="src: unfinishedenviro.ply" position="6.33653 -2.04014 3.43041" rotation="-90 0 90"></a-entity>
-                 
+        <a-entity ply-model="src: enviro.ply" position="6.33653 -2.04014 3.43041" rotation="-90 0 90"></a-entity>
+        <a-entity ply-model="src: model.ply" position="7.78675 -1.94445 3.43301" rotation="-90 0 90"
+        animation="
+        property: position; 
+        from:7.78675 -1.94445 3.43301;
+        to:6.38675 -1.94445 3.43301;
+        dir:alternate;
+        loop:true;
+        "
+        ></a-entity>  
     </a-scene>
   </body>
 </html>
